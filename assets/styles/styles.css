@@ -12,6 +12,32 @@ body {
   box-sizing: border-box;
 }
 
+.light-mode {
+  background-color: #efefef;
+}
+.light-mode .title,
+.light-mode .text,
+.light-mode .main__subtitle {
+  color: #202124;
+}
+.light-mode .text {
+  font-weight: 400;
+}
+.light-mode .text-color {
+  font-weight: 600;
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 link {
   cursor: pointer;
 }
@@ -97,7 +123,8 @@ link {
 }
 .active {
   background-color: #202124;
-  border-bottom: 0.5px solid #ffffff;
+  border-bottom: 0.5px solid #000000;
+  transition: ease-in-out 1s;
 }
 
 .header__list {
@@ -127,7 +154,6 @@ link {
   padding: 1rem;
   background-color: #ffffff;
   text-transform: uppercase;
-  text-decoration: underline;
   border: 2px solid #efd912;
   border-radius: 20px 0;
   font-family: "Raleway", sans-serif;
@@ -137,6 +163,66 @@ link {
 
 .header__button:hover {
   background-color: #efd912;
+}
+
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.theme-switch-wrapper p {
+  margin: 0 10px;
+  font-size: 0.7rem;
+  text-transform: lowercase;
+}
+
+.theme-switch {
+  display: inline-block;
+  height: 26px;
+  position: relative;
+  width: 40px;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 3px;
+  content: "";
+  height: 20px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 20px;
+}
+
+input:checked + .slider {
+  background-color: #efd912;
+}
+
+input:checked + .slider:before {
+  transform: translateX(12px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
 
 /* INTRO */
@@ -162,6 +248,10 @@ link {
 
 .intro__text {
   font-size: 2rem;
+}
+
+.intro__container {
+  margin: auto 0;
 }
 
 @media screen and (max-width: 480px) {
@@ -250,8 +340,8 @@ link {
   visibility: visible;
   transition: 1s;
   -webkit-transition: 1s;
-  transform: translatey(-80px);
-  -webkit-transform: translatey(-80px);
+  transform: translatey(-103px);
+  -webkit-transform: translatey(-103px);
 }
 
 .gallery__blur {
@@ -347,6 +437,7 @@ link {
 /* FOOTER */
 
 .footer {
+  background-color: #202124;
   padding: 4rem;
   text-align: center;
 }
@@ -376,4 +467,7 @@ link {
 .footer__icon:hover {
   fill: #efd912;
   transform: scale(1.1);
+}
+.footer__text-link {
+  color: inherit;
 }

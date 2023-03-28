@@ -18,53 +18,68 @@
 <body>
     <button onclick="topFunction()" class="up-button"></button>
     <header class="header">
-        <img src="./assets/img/logo.png" alt="WPL logo." class="header__logo">
+        <a href="#" class="header__link"><img src="./assets/img/logo.png" alt="WPL logo." class="header__logo"></a>
         <nav class="header__nav">
             <ul class="header__list">
-                <li class="header__item"><a href="" class="header__link">press release</a></li>
-                <li class="header__item"><a href="" class="header__link">top 8 finalists</a></li>
-                <li class="header__item"><a href="" class="header__link">day 1 results</a></li>
-                <li class="header__item"><a href="" class="header__link">day 2 results</a></li>
+                <li class="header__item"><a href="#" class="header__link">press release</a></li>
+                <li class="header__item"><a href="#" class="header__link">top 8 finalists</a></li>
+                <li class="header__item"><a href="#" class="header__link">day 1 results</a></li>
+                <li class="header__item"><a href="#" class="header__link">day 2 results</a></li>
             </ul>
         </nav>
+        <div class="theme-switch-wrapper">
+            <p>Dark</p>
+            <label class="theme-switch" for="checkbox">
+                <input onclick="lightMode()" type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+            </label>
+            <p>Light</p>
+        </div>
         <button class="header__button">player application</button>
     </header>
     <section class="intro">
-        <h1 class="intro__title"><span class="intro__title_cursive">Gary Hester</span> Wins Inaugural WPL Championship
-        </h1>
-        <p class="intro__text">Hester Defeats <span class="text-underline">Matt McCaslin</span> by Two Strokes in Final
-            Round for First Place.</p>
+        <div class="intro__container">
+            <h1 class="intro__title"><span class="intro__title_cursive">Gary Hester</span> Wins Inaugural WPL
+                Championship
+            </h1>
+            <p class="intro__text">Hester Defeats <span class="text-underline">Matt McCaslin</span> by Two Strokes in
+                Final
+                Round for First Place.</p>
+        </div>
     </section>
     <section class="main">
         <div class="main__container">
-            <h2 class="main__title title"><span class="text-underline text-color">Event 1</span>, World Putting League
+            <h2 class="main__title title"><span class="text-color">Event 1</span>, World Putting League
             </h2>
             <h3 class="main__subtitle subtitle">Live from the Hawaii Rumble in Myrtle Beach, South Carolina, February
                 27-28th, 2023.</h3>
-            <p class="main__text main__text_1 text">US National Mini Golf Team member <span class="text-color">Gary
-                    Hester</span> (+550
+            <p class="main__text main__text_1 text">US National Mini Golf Team member Gary
+                Hester (+550
                 field) won the
                 inaugural World Putting League Championship at
                 Hawaiian Rumble Minigolf in Myrtle Beach, S.C. after shooting a final round 31 for 5 under par to defeat
                 Matt McCaslin
                 (33, 3 under par; +190 pre-tournament to win) and take home the $5,000 championship purse.</p>
-            <p class="main__text main__text_2 text">Hester finished the Day 1 qualifying rounds by shooting 32 (-4) and
+            <p class="main__text main__text_2 text">Hester finished the Day 1 qualifying rounds by shooting 32
+                (-4) and
                 31 (-5), respectively, to combine for 9 under par
                 and the No. 2 seed heading into the Day 2 match play bracket. After Day 1, Hester’s odds to win moved to
                 +420. </p>
-            <p class="main__text main__text_3 text">Hester defeated Rick Alessi with a 35 (-1) in the quarterfinals
+            <p class="main__text main__text_3 text">Hester defeated Rick Alessi with a 35 (-1) in the
+                quarterfinals
                 before squeaking by Joey Graybeal in the semifinals by
                 one stroke, 32 (-4) to 33 (-3). Graybeal entered the Day 2 quarterfinals as the top seed (-350 to win
                 after Day 1) after
                 pacing the field with a combined -9 in the two qualifying rounds.</p>
         </div>
-        <div class="main__wrapper"><img src="./assets/img/team.png" alt="WPL team." class="main__img"></div>
+        <div class="main__wrapper"><img src="./assets/img/team.png" alt="WPL team." class="main__img reveal"></div>
     </section>
     <section class="gallery">
         <h2 class="gallery__title title">Special Guests</h2>
         <ul class="gallery__list">
-            <li class="gallery__item">
-                <div class="gallery__container"><img class="gallery__img" src="./assets/img/member.jpeg" alt="">
+            <li class="gallery__item reveal">
+                <div class="gallery__container"><img class="gallery__img" src="./assets/img/member.jpeg"
+                        alt="Photo of Kaz Brown.">
                     <div class="gallery__text-container">
                         <div class="gallery__blur"></div>
                         <div class="gallery__div-text">
@@ -74,8 +89,9 @@
                     </div>
                 </div>
             </li>
-            <li class="gallery__item">
-                <div class="gallery__container"><img class="gallery__img" src="./assets/img/member1.jpeg" alt="">
+            <li class="gallery__item reveal">
+                <div class="gallery__container"><img class="gallery__img" src="./assets/img/member1.jpeg"
+                        alt="Photo of Brian Katrek.">
                     <div class="gallery__text-container">
                         <div class="gallery__blur"></div>
                         <div class="gallery__div-text">
@@ -85,8 +101,9 @@
                     </div>
                 </div>
             </li>
-            <li class="gallery__item">
-                <div class="gallery__container"><img class="gallery__img" src="./assets/img/member2.jpeg" alt="">
+            <li class="gallery__item reveal">
+                <div class="gallery__container"><img class="gallery__img" src="./assets/img/member2.jpeg"
+                        alt="Photo of Bogey Bois.">
                     <div class="gallery__text-container">
                         <div class="gallery__blur"></div>
                         <div class="gallery__div-text">
@@ -100,10 +117,11 @@
     </section>
     <section class="profile">
         <div class="profile__container">
-            <h2 class="profile__title title"><span class="text-underline">Champion</span> Player Profile</h2>
+            <h2 class="profile__title title">Champion Player Profile</h2>
             <h3 class="profile__subtitle subtitle text-color">Gary Hester</h3>
             <p class="profile__subtext">North Carolina</p>
-            <p class="profile__text">Teeing off his Mini Golf career in 1969, Gary has over 50 years of experience in
+            <p class="profile__text text">Teeing off his Mini Golf career in 1969, Gary has over 50 years of experience
+                in
                 the sport. He started at the Arnold
                 Palmer Mini Golf course in High Point, NC, where he took home four straight championships. In the USPMGA
                 Masters, he has
@@ -114,13 +132,13 @@
                 he finished as the top American and finished third overall.</p>
         </div>
         <div class="profile__container_2">
-            <img src="./assets/img/profile.jpeg" alt="Champion Profile picture." class="profile__photo">
+            <img src="./assets/img/profile.jpeg" alt="Champion Profile picture." class="profile__photo reveal">
         </div>
     </section>
     <footer class="footer">
         <a href="#" class="footer__logo-link"><img src="./assets/img/logo.png" alt="" class="footer__logo"></a>
         <p class="footer__text">World Putting League is sanctioned by the <a href="#"
-                class="footer__text-link">USPMGA</a>
+                class="footer__text-link text-underline">USPMGA</a>
             (US Pro MiniGolf Association) and
             produced by Pro League Network</p>
         <ul class="footer__list">
