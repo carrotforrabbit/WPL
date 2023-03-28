@@ -92,7 +92,7 @@ link {
   z-index: 99;
   border: none;
   outline: none;
-  background-image: url("../img/up-button.svg");
+  background-image: url("../../img/up-button.svg");
   background-repeat: no-repeat;
   background-position: center;
   opacity: 60%;
