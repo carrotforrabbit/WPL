@@ -17,6 +17,7 @@ body {
 }
 .light-mode .title,
 .light-mode .text,
+.light-mode .profile__subtext,
 .light-mode .main__subtitle {
   color: #202124;
 }
@@ -91,7 +92,7 @@ link {
   z-index: 99;
   border: none;
   outline: none;
-  background-image: url("../../img/up-button.svg");
+  background-image: url("../img/up-button.svg");
   background-repeat: no-repeat;
   background-position: center;
   opacity: 60%;
@@ -462,7 +463,7 @@ input:checked + .slider:before {
 
 @media screen and (max-width: 1024px) {
   .main-video {
-    top: 120rem;
+    top: 135rem;
     right: 0;
   }
 

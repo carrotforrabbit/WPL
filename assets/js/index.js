@@ -74,4 +74,5 @@ let menu = document.querySelector(".hamburger");
 hamgurgerBtn.addEventListener("click", () => {
   menu.classList.toggle("active");
   hamgurgerBtn.classList.toggle("open");
+  event.preventDefault();
 });
