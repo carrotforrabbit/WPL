@@ -16,6 +16,7 @@
 </head>
 
 <body>
+    <button onclick="topFunction()" class="up-button"></button>
     <header class="header">
         <img src="./assets/img/logo.png" alt="WPL logo." class="header__logo">
         <nav class="header__nav">
@@ -40,11 +41,8 @@
             </h2>
             <h3 class="main__subtitle subtitle">Live from the Hawaii Rumble in Myrtle Beach, South Carolina, February
                 27-28th, 2023.</h3>
-            <p class="main__text main__text_1 text">These athletes devote countless hours to perfect their game and and
-                finally had their
-                chance to showcase their talents
-                to the world. There couldn't be a better inaugural champion than Gary Hester, a mainstay at USPMGA
-                events for decades. US National Mini Golf Team member <span class="text-color">Gary Hester</span> (+550
+            <p class="main__text main__text_1 text">US National Mini Golf Team member <span class="text-color">Gary
+                    Hester</span> (+550
                 field) won the
                 inaugural World Putting League Championship at
                 Hawaiian Rumble Minigolf in Myrtle Beach, S.C. after shooting a final round 31 for 5 under par to defeat
@@ -102,9 +100,9 @@
     </section>
     <section class="profile">
         <div class="profile__container">
-            <h2 class="profile__title title">Champion Player Profile</h2>
-            <h3 class="profile__subtitle subtitle">Gary Hester</h3>
-            <p class="profile__">North Carolina</p>
+            <h2 class="profile__title title"><span class="text-underline">Champion</span> Player Profile</h2>
+            <h3 class="profile__subtitle subtitle text-color">Gary Hester</h3>
+            <p class="profile__subtext">North Carolina</p>
             <p class="profile__text">Teeing off his Mini Golf career in 1969, Gary has over 50 years of experience in
                 the sport. He started at the Arnold
                 Palmer Mini Golf course in High Point, NC, where he took home four straight championships. In the USPMGA
@@ -115,25 +113,49 @@
                 years. In Sweden
                 he finished as the top American and finished third overall.</p>
         </div>
-        <div class="profile__container">
-            <img src="" alt="" class="profile__photo">
+        <div class="profile__container_2">
+            <img src="./assets/img/profile.jpeg" alt="Champion Profile picture." class="profile__photo">
         </div>
     </section>
     <footer class="footer">
-        <a href="" class="footer__logo-link"><img src="#" alt="" class="footer__logo"></a>
+        <a href="#" class="footer__logo-link"><img src="./assets/img/logo.png" alt="" class="footer__logo"></a>
         <p class="footer__text">World Putting League is sanctioned by the <a href="#"
                 class="footer__text-link">USPMGA</a>
             (US Pro MiniGolf Association) and
             produced by Pro League Network</p>
+        <ul class="footer__list">
+            <li class="footer__item"><a href="#" class="footer__link"><svg class="footer__icon"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <g>
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path fill-rule="nonzero"
+                                d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 0 0-2.5 0 1.25 1.25 0 0 0 2.5 0zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z" />
+                        </g>
+                    </svg></a></li>
+            <li class="footer__item"><a href="#" class="footer__link"><svg class="footer__icon"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"
+                        version="1.1" viewBox="0 0 512 512" xml:space="preserve">
 
-        <div class="footer__container">
-            <ul class="footer__list">
-                <li class="footer__item"><a href="" class="footer__link"></a></li>
-                <li class="footer__item"><a href="" class="footer__link"></a></li>
-                <li class="footer__item"><a href="" class="footer__link"></a></li>
-            </ul>
-        </div>
+                        <g id="7935ec95c421cee6d86eb22ecd12f847">
+
+                            <path style="display: inline;"
+                                d="M459.186,151.787c0.203,4.501,0.305,9.023,0.305,13.565   c0,138.542-105.461,298.285-298.274,298.285c-59.209,0-114.322-17.357-160.716-47.104c8.212,0.973,16.546,1.47,25.012,1.47   c49.121,0,94.318-16.759,130.209-44.884c-45.887-0.841-84.596-31.154-97.938-72.804c6.408,1.227,12.968,1.886,19.73,1.886   c9.55,0,18.816-1.287,27.617-3.68c-47.955-9.633-84.1-52.001-84.1-102.795c0-0.446,0-0.882,0.011-1.318   c14.133,7.847,30.294,12.562,47.488,13.109c-28.134-18.796-46.637-50.885-46.637-87.262c0-19.212,5.16-37.218,14.193-52.7   c51.707,63.426,128.941,105.156,216.072,109.536c-1.784-7.675-2.718-15.674-2.718-23.896c0-57.891,46.941-104.832,104.832-104.832   c30.173,0,57.404,12.734,76.525,33.102c23.887-4.694,46.313-13.423,66.569-25.438c-7.827,24.485-24.434,45.025-46.089,58.002   c21.209-2.535,41.426-8.171,60.222-16.505C497.448,118.542,479.666,137.004,459.186,151.787z">
+
+                            </path>
+
+                        </g>
+
+                    </svg></a></li>
+            <li class="footer__item"><a href="#" class="footer__link"><svg class="footer__icon"
+                        xmlns="http://www.w3.org/2000/svg" fill="#000000" viewBox="-5.5 0 32 32" version="1.1">
+                        <title>facebook</title>
+                        <path
+                            d="M1.188 5.594h18.438c0.625 0 1.188 0.563 1.188 1.188v18.438c0 0.625-0.563 1.188-1.188 1.188h-18.438c-0.625 0-1.188-0.563-1.188-1.188v-18.438c0-0.625 0.563-1.188 1.188-1.188zM14.781 17.281h2.875l0.125-2.75h-3v-2.031c0-0.781 0.156-1.219 1.156-1.219h1.75l0.063-2.563s-0.781-0.125-1.906-0.125c-2.75 0-3.969 1.719-3.969 3.563v2.375h-2.031v2.75h2.031v7.625h2.906v-7.625z" />
+                    </svg></a></li>
+        </ul>
     </footer>
+
+    <script src="./assets/js/index.js"></script>
 </body>
 
 </html>
