@@ -47,7 +47,7 @@ function lightMode() {
   element.classList.toggle("light-mode");
 }
 
-//onscroll
+//onscroll imgs
 function reveal() {
   let reveals = document.querySelectorAll(".reveal");
   for (let i = 0; i < reveals.length; i++) {
@@ -65,3 +65,13 @@ function reveal() {
 window.addEventListener("scroll", reveal);
 
 reveal();
+
+//humburger
+
+let hamgurgerBtn = document.querySelector(".hamburger-btn");
+let menu = document.querySelector(".hamburger");
+
+hamgurgerBtn.addEventListener("click", () => {
+  menu.classList.toggle("active");
+  hamgurgerBtn.classList.toggle("open");
+});
