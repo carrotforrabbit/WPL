@@ -1,7 +1,5 @@
 <h1 id="title" align="center">WPL</h1>
 
-<p align="center"><img src="" alt="project-image"></p>
-
 <p id="description">Test assignment for one of the job positions. The action plan was to re-built the existing page to better suit the brand. The assignment was limited in time.</p>
 
 <h2>🚀 Demo</h2>
@@ -10,7 +8,7 @@
 
 <h2>Project Screenshots:</h2>
 
-<img src="https://monosnap.com/file/eWQxWA8UJ1DHO4CPtbL0GHd5QZs4Lc" alt="project-screenshot" width="300" height="100/">
+<img href="https://monosnap.com/file/eWQxWA8UJ1DHO4CPtbL0GHd5QZs4Lc" alt="project-screenshot" width="300" height="100/">
 
   
   
