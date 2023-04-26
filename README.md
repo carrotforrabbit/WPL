@@ -10,7 +10,7 @@
 
 <h2>Project Screenshots:</h2>
 
-<img src="https://monosnap.com/file/gDU9gCifXxD8o2NnUggOqs0jLuvOXA" alt="project-screenshot" width="300" height="100/">
+<img src="https://monosnap.com/file/eWQxWA8UJ1DHO4CPtbL0GHd5QZs4Lc" alt="project-screenshot" width="300" height="100/">
 
   
   
